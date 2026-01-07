@@ -7,7 +7,7 @@ from io import BytesIO
 
 BASE = "https://www.fylladiomat.gr"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
-OUTPUT_DIR = "output"
+OUTPUT_DIR = "flyers"
 
 BROCHURES_NAME_DIC = {"Bazaar": "bazaar",
              "Discount Markt": "discount_markt",
