@@ -11,7 +11,7 @@ OUTPUT_DIR = "output"
 
 BROCHURES_NAME_DIC = {"Bazaar": "bazaar",
              "Discount Markt": "discount_markt",
-             "ENA_Cash & Carry": "ena_cash_&_carry",
+             "ENA Cash & Carry": "ena_cash_&_carry",
              "Express Market": "express_market",
              "Lidl": "lidl",
              "Market in": "market_in",
