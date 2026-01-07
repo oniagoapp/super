@@ -25,9 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run scraper
+      - name: Run super
         run: |
-          python scraper.py
+          python super.py
 
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v4
