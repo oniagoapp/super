@@ -1,0 +1,105 @@
+{
+    "base_url": "https://feizidischristos.github.io/super/flyers/",
+    "retailers": [
+        {
+            "name": "Bazaar",
+            "logo": "https://eu.leafletscdns.com/thumbor/ccYaMTpJdNNFIVOIa0z4N6hBl3I=/0x0/filters:format(webp):quality(65)/gr/data/27/logo.png",
+            "catalog": "bazaar.pdf"
+        },
+        {
+            "name": "Discount Markt",
+            "logo": "https://eu.leafletscdns.com/thumbor/c_nFH-z1OZK7nn_fh96KHRamZFk=/0x0/filters:format(webp):quality(65)/gr/data/48/logo.png",
+            "catalog": "discount_markt.pdf"
+        },
+        {
+            "name": "ENA Cash & Carry",
+            "logo": "https://eu.leafletscdns.com/thumbor/KIA2n7HQkF_FRoT3rtl1rZr8s7U=/0x0/filters:format(webp):quality(65)/gr/data/78/logo.png",
+            "catalog": "ena_cash_&_carry.pdf"
+        },
+        {
+            "name": "Express Market",
+            "logo": "https://eu.leafletscdns.com/thumbor/Y8NNYT0E1NMpj4-C4QQPPAlNiTk=/0x0/filters:format(webp):quality(65)/gr/data/57/logo.png",
+            "catalog": "express_market.pdf"
+        },
+        {
+            "name": "Lidl",
+            "logo": "https://eu.leafletscdns.com/thumbor/r0qRi5e99WDOJU6f0XhgzrNI6pI=/0x0/filters:format(webp):quality(65)/gr/data/1/logo.png",
+            "catalog": "lidl.pdf"
+        },
+        {
+            "name": "Market in",
+            "logo": "https://eu.leafletscdns.com/thumbor/tFhKSQsO02Ppq5H3HLAhpn6QLW4=/0x0/filters:format(webp):quality(65)/gr/data/2/logo.png",
+            "catalog": "market_in.pdf"
+        },
+        {
+            "name": "METRO Cash & Carry",
+            "logo": "https://eu.leafletscdns.com/thumbor/TkV7XkMJSx_wcqNkMn29l874W7U=/0x0/filters:format(webp):quality(65)/gr/data/69/logo.png",
+            "catalog": "metro_cash_&_carry.pdf"
+        },
+        {
+            "name": "My market",
+            "logo": "https://eu.leafletscdns.com/thumbor/dmO-VAemixzXb5ccgqsoqfA0xgg=/0x0/filters:format(webp):quality(65)/gr/data/3/logo.png",
+            "catalog": "my_market.pdf"
+        },
+        {
+            "name": "Synka",
+            "logo": "https://eu.leafletscdns.com/thumbor/gKSGMDuy8MxEzC_UOoIHmKdRaho=/0x0/filters:format(webp):quality(65)/gr/data/66/logo.png",
+            "catalog": "synka.pdf"
+        },
+        {
+            "name": "The Mart",
+            "logo": "https://eu.leafletscdns.com/thumbor/7-z0n5pjqlLA4YlTwY83oAu3qhc=/0x0/filters:format(webp):quality(65)/gr/data/8/logo.png",
+            "catalog": "the_mart.pdf"
+        },
+        {
+            "name": "ΑΒ Βασιλόπουλος",
+            "logo": "https://eu.leafletscdns.com/thumbor/ZcCoRTtj1KvMfIF-IpF4gG6VO5U=/0x0/filters:format(webp):quality(65)/gr/data/4/logo.png",
+            "catalog": "ab_vasilopoulos.pdf"
+        },
+        {
+            "name": "Ανδρικοπουλος",
+            "logo": "https://eu.leafletscdns.com/thumbor/AV7pS_4GttwozNjP8dhN2CzedcY=/0x0/filters:format(webp):quality(65)/gr/data/63/logo.png",
+            "catalog": "adrikopoulos.pdf"
+        },
+        {
+            "name": "Αριάδνη",
+            "logo": "https://eu.leafletscdns.com/thumbor/nuLwde5z4516IP1-HIX5JdKKaNw=/0x0/filters:format(webp):quality(65)/gr/data/75/logo.png",
+            "catalog": "ariadni.pdf"
+        },
+        {
+            "name": "Γαλαξίας",
+            "logo": "https://eu.leafletscdns.com/thumbor/y3FPJeeVlGuZ_L08hmDLoTjyhf4=/0x0/filters:format(webp):quality(65)/gr/data/6/logo.png",
+            "catalog": "galaxias.pdf"
+        },
+        {
+            "name": "ΕΛΟΜΑΣ",
+            "logo": "https://eu.leafletscdns.com/thumbor/vPNbh3OGlxIg_lTgl1TNovAdaow=/0x0/filters:format(webp):quality(65)/gr/data/50/logo.png",
+            "catalog": "elomas.pdf"
+        },
+        {
+            "name": "Θανόπουλος",
+            "logo": "https://eu.leafletscdns.com/thumbor/qPZK6RvExNV1qg004H4H_AjOHoQ=/0x0/filters:format(webp):quality(65)/gr/data/72/logo.png",
+            "catalog": "thanopoulos.pdf"
+        },
+        {
+            "name": "ΚΡΗΤΙΚΟΣ",
+            "logo": "https://eu.leafletscdns.com/thumbor/qaJwJb5bkEbNkQS_cq1y4Z3mOS8=/0x0/filters:format(webp):quality(65)/gr/data/7/logo.png",
+            "catalog": "kritikos.pdf"
+        },
+        {
+            "name": "Μασούτης",
+            "logo": "https://eu.leafletscdns.com/thumbor/TCPXOVUpaBBydgshTWqi6TsytfY=/0x0/filters:format(webp):quality(65)/gr/data/5/logo.png",
+            "catalog": "masoutis.pdf"
+        },
+        {
+            "name": "ΣΚΛΑΒΕΝΙΤΗΣ",
+            "logo": "https://eu.leafletscdns.com/thumbor/UXJw2fbs6zRSpsxzCu9lRZ96fOw=/0x0/filters:format(webp):quality(65)/gr/data/46/logo.png",
+            "catalog": "sklavenitis.pdf"
+        },
+        {
+            "name": "Χαλκιαδάκης",
+            "logo": "https://eu.leafletscdns.com/thumbor/cbrhBtbvz0im6JlUZ18wryUK5ME=/0x0/filters:format(webp):quality(65)/gr/data/53/logo.png",
+            "catalog": "chalkiadakis.pdf"
+        }
+    ]
+}
