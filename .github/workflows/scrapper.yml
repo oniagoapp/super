@@ -2,8 +2,8 @@ name: Super Scraper
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC
-    - cron: "0 2 * * *"
+    # Runs every day at 22:00 UTC
+    - cron: "0 22 * * *"
 
   workflow_dispatch: # allows manual run from GitHub UI
 
