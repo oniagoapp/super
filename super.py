@@ -62,25 +62,25 @@ BROCHURES_NAME_DIC = {"Bazaar": "bazaar",
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def get_brands():
+def getBrands():
     soup = BeautifulSoup(
         requests.get(f"{BASE}/souper-market/", headers=HEADERS).text,
         "html.parser"
     )
 
     brands = {}
-    for a in soup.nav.find("li", class_="has_child active"):
-            for cat in a.find_all("li"):
-                name = cat.get_text(strip=True)
-                href = cat.find("a").get("href")
 
-                if name:
-                    brands[name] = urljoin(BASE, href)
+    for brandsContainer in soup.main.find("div", class_="the-page").find("div", id="sidebar").find("div", class_="box"):
+        for brandItem in brandsContainer.find_all("li"):
+            name = brandItem.get_text(strip=True)
+            href = brandItem.find("a").get("href")
 
+            if name:
+                brands[name] = urljoin(BASE, href)
 
     return brands
 
-def get_brochures(brand_url):
+def getBrandBrochuresUrl(brand_url):
     soup = BeautifulSoup(
         requests.get(brand_url, headers=HEADERS).text,
         "html.parser"
@@ -88,28 +88,25 @@ def get_brochures(brand_url):
 
     brochures = []
 
+    for brandContainer in soup.body.main.find("div", class_="container shop-page"):
 
-    for g in soup.body.main.find("div", class_="container shop-page"):
-#        print("\n\n")
-        i = g.find("div", class_="row").find("div", class_="row").find("div", class_="brochure-thumb").find("a").get("href")
-        brochures.append(urljoin(BASE, i))
-#        print(brochures)
-#        print("\n")
+        urlBrandAppending = brandContainer.find("div", class_="row").find("div", class_="row").find("div", class_="brochure-thumb").find("a").get("href")
+        brochures.append(urljoin(BASE, urlBrandAppending))
 
     return list(dict.fromkeys(brochures))
 
-def get_logo(brand_url):
+def getLogo(brand_url):
     soup = BeautifulSoup(
         requests.get(brand_url, headers=HEADERS).text,
         "html.parser"
     )
 
-    for g in soup.body.main.find("div", class_="frame"):
-        i = g.get("src").split(".png?",1)[0] + (".png")
+    for logoContainer in soup.body.main.find("div", class_="frame"):
+        logoUrl = logoContainer.get("src").split(".png?",1)[0] + (".png")
 
-    return i
+    return logoUrl
 
-def get_brochure_images(brochure_url):
+def getBrochureImages(brochure_url):
 
     soup = BeautifulSoup(
         requests.get(brochure_url, headers=HEADERS).text,
@@ -118,25 +115,20 @@ def get_brochure_images(brochure_url):
 
     images = []
     totalNumPages = 0
-    for nu in soup.find_all("a", class_ = "btn btn-default page-num btn-sm navigate-brochure"):
-        totalNumPages = nu.string
-#    print("\n")
-#    print(totalNumPages)
+    for totalPageNumber in soup.find_all("a", class_ = "btn btn-default page-num btn-sm navigate-brochure"):
+        totalNumPages = totalPageNumber.string
     brochure_url = urljoin(brochure_url, "?page=")
-#    print(brochure_url)
-#    print("\n")
 
     for p in range(1,int(totalNumPages)):
+        brochureUrlWithPage = brochure_url + str(p)
         soup = BeautifulSoup(
-            requests.get(brochure_url + str(p), headers=HEADERS).text,
+            requests.get(brochureUrlWithPage, headers=HEADERS).text,
             "html.parser"
         )
 
-        for pic in soup.find_all("img", id = "pageImage"):
-            img = pic.get("src")
-#            print(img)
+        for brochurePageElement in soup.find_all("img", id = "pageImage"):
+            img = brochurePageElement.get("src")
             images.append(img)
-
 
 #    # Remove duplicates, keep order
     seen = set()
@@ -149,7 +141,7 @@ def get_brochure_images(brochure_url):
     return ordered
 
 
-def create_brand_pdf(brand_name, image_urls):
+def createBrandPdf(brand_name, image_urls):
     images = []
 
     for url in image_urls:
@@ -170,7 +162,7 @@ def create_brand_pdf(brand_name, image_urls):
         print(f" Saved {pdf_path}")
 
 def main():
-    brands = get_brands()
+    brands = getBrands()
 
     retailers = []
 
@@ -179,13 +171,13 @@ def main():
 
         all_images = []
 
-        brochures = get_brochures(brand_url)
+        brochures = getBrandBrochuresUrl(brand_url)
 
         print(f" Found {len(brochures)} brochures")
 
         brochureName  = BROCHURES_NAME_DIC[brand]
 
-        logoUrl = get_logo(brand_url)
+        logoUrl = getLogo(brand_url)
 
         retailers.append(
             Retailer(
@@ -196,12 +188,12 @@ def main():
         )
 
         for brochure in brochures:
-            imgs = get_brochure_images(brochure)
+            imgs = getBrochureImages(brochure)
             print(f"{len(imgs)} pages")
             all_images.extend(imgs)
 
         if all_images:
-            create_brand_pdf(brochureName, all_images)
+            createBrandPdf(brochureName, all_images)
         else:
             print("No images found")
 
@@ -217,4 +209,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
