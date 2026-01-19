@@ -89,9 +89,9 @@ def getBrandBrochuresUrl(brand_url):
     brochures = []
 
     for brandContainer in soup.body.main.find("div", class_="container shop-page"):
-
-        urlBrandAppending = brandContainer.find("div", class_="row").find("div", class_="row").find("div", class_="brochure-thumb").find("a").get("href")
-        brochures.append(urljoin(BASE, urlBrandAppending))
+        if brandContainer.find("div", class_="row").find("div", class_="row").find("div", class_="brochure-thumb") != None:
+            urlBrandAppending = brandContainer.find("div", class_="row").find("div", class_="row").find("div", class_="brochure-thumb").find("a").get("href")
+            brochures.append(urljoin(BASE, urlBrandAppending))
 
     return list(dict.fromkeys(brochures))
 
@@ -173,18 +173,28 @@ def main():
 
         brochures = getBrandBrochuresUrl(brand_url)
 
-        print(f" Found {len(brochures)} brochures")
-
         brochureName  = BROCHURES_NAME_DIC[brand]
 
         logoUrl = getLogo(brand_url)
 
-        retailers.append(
-            Retailer(
-                name=brand,
-                logo=logoUrl,
-                catalog=f"{brochureName}.pdf"
-            )
+        if brochures:
+            print(f" Found {len(brochures)} brochures")
+            retailers.append(
+                Retailer(
+                    name=brand,
+                    logo=logoUrl,
+                    catalog=f"{brochureName}.pdf"
+                )
+        )
+        else:
+            print(f" Found {len(brochures)} brochures")
+            retailers.append(
+                Retailer(
+                    name=brand,
+                    logo=logoUrl,
+                    catalog= None
+                )
+
         )
 
         for brochure in brochures:
