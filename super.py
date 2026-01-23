@@ -106,6 +106,12 @@ def getLogo(brand_url):
 
     return logoUrl
 
+def downloadLogo(logoUrl, brand):
+
+    imgData = requests.get(logoUrl).content
+    with open(f"flyers/logo/{brand}.jpg", "wb") as handler:
+        handler.write(imgData)
+
 def getBrochureImages(brochure_url):
 
     soup = BeautifulSoup(
@@ -174,15 +180,18 @@ def main():
         brochures = getBrandBrochuresUrl(brand_url)
 
         brochureName  = BROCHURES_NAME_DIC[brand]
+        logoName  = BROCHURES_NAME_DIC[brand]
 
         logoUrl = getLogo(brand_url)
+
+        downloadLogo(logoUrl, logoName)
 
         if brochures:
             print(f" Found {len(brochures)} brochures")
             retailers.append(
                 Retailer(
                     name=brand,
-                    logo=logoUrl,
+                    logo=f"logo/{logoName}.jpg",
                     catalog=f"{brochureName}.pdf"
                 )
         )
@@ -191,7 +200,7 @@ def main():
             retailers.append(
                 Retailer(
                     name=brand,
-                    logo=logoUrl,
+                    logo=f"logo/{logoName}.jpg",
                     catalog= None
                 )
 
