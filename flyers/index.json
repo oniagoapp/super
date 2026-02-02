@@ -14,7 +14,7 @@
         {
             "name": "ENA Cash & Carry",
             "logo": "logo/ena_cash_&_carry.jpg",
-            "catalog": null
+            "catalog": "ena_cash_&_carry.pdf"
         },
         {
             "name": "Express Market",
@@ -64,7 +64,7 @@
         {
             "name": "Αριάδνη",
             "logo": "logo/ariadni.jpg",
-            "catalog": null
+            "catalog": "ariadni.pdf"
         },
         {
             "name": "Γαλαξίας",
