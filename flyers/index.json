@@ -67,6 +67,11 @@
             "catalog": "ariadni.pdf"
         },
         {
+            "name": "ΑΦΡΟΔΙΤΗ",
+            "logo": "logo/afroditi.jpg",
+            "catalog": "afroditi.pdf"
+        },
+        {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
             "catalog": "galaxias.pdf"
