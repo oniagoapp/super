@@ -9,7 +9,7 @@ from typing import List
 import json
 
 BASE = "https://www.fylladiomat.gr"
-BASE_URL_JSON = "https://feizidischristos.github.io/super/flyers/"
+BASE_URL_JSON = "https://oniagoapp.github.io/super/flyers/"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 OUTPUT_DIR = "flyers"
 
