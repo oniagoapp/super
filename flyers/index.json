@@ -39,7 +39,7 @@
         {
             "name": "My market",
             "logo": "logo/my_market.jpg",
-            "catalog": "my_market.pdf"
+            "catalog": null
         },
         {
             "name": "Synka",
@@ -69,17 +69,17 @@
         {
             "name": "ΑΦΡΟΔΙΤΗ",
             "logo": "logo/afroditi.jpg",
-            "catalog": "afroditi.pdf"
+            "catalog": null
         },
         {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
-            "catalog": "galaxias.pdf"
+            "catalog": null
         },
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": "elomas.pdf"
+            "catalog": null
         },
         {
             "name": "Θανόπουλος",
