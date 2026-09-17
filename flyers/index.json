@@ -19,7 +19,7 @@
         {
             "name": "Express Market",
             "logo": "logo/express_market.jpg",
-            "catalog": "express_market.pdf"
+            "catalog": null
         },
         {
             "name": "Lidl",
@@ -39,7 +39,7 @@
         {
             "name": "My market",
             "logo": "logo/my_market.jpg",
-            "catalog": null
+            "catalog": "my_market.pdf"
         },
         {
             "name": "Synka",
@@ -69,17 +69,17 @@
         {
             "name": "ΑΦΡΟΔΙΤΗ",
             "logo": "logo/afroditi.jpg",
-            "catalog": null
+            "catalog": "afroditi.pdf"
         },
         {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
-            "catalog": null
+            "catalog": "galaxias.pdf"
         },
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": null
+            "catalog": "elomas.pdf"
         },
         {
             "name": "Θανόπουλος",
@@ -89,7 +89,7 @@
         {
             "name": "ΚΡΗΤΙΚΟΣ",
             "logo": "logo/kritikos.jpg",
-            "catalog": "kritikos.pdf"
+            "catalog": null
         },
         {
             "name": "Μασούτης",
