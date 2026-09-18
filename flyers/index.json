@@ -19,7 +19,7 @@
         {
             "name": "Express Market",
             "logo": "logo/express_market.jpg",
-            "catalog": null
+            "catalog": "express_market.pdf"
         },
         {
             "name": "Lidl",
@@ -89,7 +89,7 @@
         {
             "name": "ΚΡΗΤΙΚΟΣ",
             "logo": "logo/kritikos.jpg",
-            "catalog": null
+            "catalog": "kritikos.pdf"
         },
         {
             "name": "Μασούτης",
