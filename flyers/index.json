@@ -4,7 +4,7 @@
         {
             "name": "Bazaar",
             "logo": "logo/bazaar.jpg",
-            "catalog": "bazaar.pdf"
+            "catalog": null
         },
         {
             "name": "Discount Markt",
@@ -34,7 +34,7 @@
         {
             "name": "METRO Cash & Carry",
             "logo": "logo/metro_cash_&_carry.jpg",
-            "catalog": "metro_cash_&_carry.pdf"
+            "catalog": null
         },
         {
             "name": "My market",
@@ -79,7 +79,7 @@
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": "elomas.pdf"
+            "catalog": null
         },
         {
             "name": "Θανόπουλος",
