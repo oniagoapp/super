@@ -29,7 +29,7 @@
         {
             "name": "Market in",
             "logo": "logo/market_in.jpg",
-            "catalog": "market_in.pdf"
+            "catalog": null
         },
         {
             "name": "METRO Cash & Carry",
@@ -39,7 +39,7 @@
         {
             "name": "My market",
             "logo": "logo/my_market.jpg",
-            "catalog": "my_market.pdf"
+            "catalog": null
         },
         {
             "name": "Synka",
@@ -79,7 +79,7 @@
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": "elomas.pdf"
+            "catalog": null
         },
         {
             "name": "Θανόπουλος",
