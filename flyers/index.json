@@ -4,7 +4,7 @@
         {
             "name": "Bazaar",
             "logo": "logo/bazaar.jpg",
-            "catalog": "bazaar.pdf"
+            "catalog": null
         },
         {
             "name": "Discount Markt",
@@ -39,7 +39,7 @@
         {
             "name": "My market",
             "logo": "logo/my_market.jpg",
-            "catalog": "my_market.pdf"
+            "catalog": null
         },
         {
             "name": "Synka",
@@ -74,7 +74,7 @@
         {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
-            "catalog": "galaxias.pdf"
+            "catalog": null
         },
         {
             "name": "ΕΛΟΜΑΣ",
