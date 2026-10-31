@@ -39,7 +39,7 @@
         {
             "name": "My market",
             "logo": "logo/my_market.jpg",
-            "catalog": null
+            "catalog": "my_market.pdf"
         },
         {
             "name": "Synka",
@@ -69,7 +69,7 @@
         {
             "name": "ΑΦΡΟΔΙΤΗ",
             "logo": "logo/afroditi.jpg",
-            "catalog": null
+            "catalog": "afroditi.pdf"
         },
         {
             "name": "Γαλαξίας",
