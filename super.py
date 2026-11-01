@@ -171,7 +171,7 @@ def getBrochureImages(brochure_url):
 
     images = []
     totalNumPages = 0
-    for totalPageNumber in soup.find_all("a", class_ = "btn btn-default page-num btn-sm navigate-brochure"):
+    for totalPageNumber in soup.find_all("a", class_ = "btn btn-default page-num btn-sm js-last-page-next navigate-brochure"):
         totalNumPages = totalPageNumber.string
     brochure_url = urljoin(brochure_url, "?page=")
 
