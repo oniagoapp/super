@@ -4,7 +4,7 @@
         {
             "name": "Bazaar",
             "logo": "logo/bazaar.jpg",
-            "catalog": "bazaar.pdf"
+            "catalog": null
         },
         {
             "name": "Discount Markt",
@@ -29,7 +29,7 @@
         {
             "name": "Market in",
             "logo": "logo/market_in.jpg",
-            "catalog": "market_in.pdf"
+            "catalog": null
         },
         {
             "name": "METRO Cash & Carry",
@@ -59,7 +59,7 @@
         {
             "name": "Ανδρικοπουλος",
             "logo": "logo/adrikopoulos.jpg",
-            "catalog": "adrikopoulos.pdf"
+            "catalog": null
         },
         {
             "name": "Αριάδνη",
@@ -79,7 +79,7 @@
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": "elomas.pdf"
+            "catalog": null
         },
         {
             "name": "Θανόπουλος",
