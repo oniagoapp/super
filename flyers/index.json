@@ -64,7 +64,7 @@
         {
             "name": "Αριάδνη",
             "logo": "logo/ariadni.jpg",
-            "catalog": null
+            "catalog": "ariadni.pdf"
         },
         {
             "name": "ΑΦΡΟΔΙΤΗ",
@@ -74,7 +74,7 @@
         {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
-            "catalog": "galaxias.pdf"
+            "catalog": null
         },
         {
             "name": "ΕΛΟΜΑΣ",
