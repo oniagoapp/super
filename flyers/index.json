@@ -59,7 +59,7 @@
         {
             "name": "Ανδρικοπουλος",
             "logo": "logo/adrikopoulos.jpg",
-            "catalog": "adrikopoulos.pdf"
+            "catalog": null
         },
         {
             "name": "Αριάδνη",
@@ -74,12 +74,12 @@
         {
             "name": "Γαλαξίας",
             "logo": "logo/galaxias.jpg",
-            "catalog": "galaxias.pdf"
+            "catalog": null
         },
         {
             "name": "ΕΛΟΜΑΣ",
             "logo": "logo/elomas.jpg",
-            "catalog": "elomas.pdf"
+            "catalog": null
         },
         {
             "name": "Θανόπουλος",
